@@ -10,31 +10,31 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
 
 const routes: Routes = [
   {
-    path: 'home/:servicecode',
+    path: 'eva/home/:servicecode',
     component: HomeComponent
   },
   {
-    path: 'scanProduct/:servicecode',
+    path: 'eva/scanProduct/:servicecode',
     component: ScanProductComponent
   },
   {
-    path: 'basket/:servicecode',
+    path: 'eva/basket/:servicecode',
     component: BasketComponent
   },
   {
-    path: 'checkout/:servicecode',
+    path: 'eva/checkout/:servicecode',
     component: CheckoutComponent
   },
   {
-    path: 'thankyou/:servicecode',
+    path: 'eva/thankyou/:servicecode',
     component: ThankyouComponent
   },
   {
-    path: 'terms_conditions',
+    path: 'eva/terms_conditions',
     component: TermsConditionsComponent
   },
   {
-    path: 'itemDescription/:servicecode/:barcode',
+    path: 'eva/itemDescription/:servicecode/:barcode',
     component: ItemDetailsComponent
   }
 ];

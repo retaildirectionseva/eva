@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+declare global {
+  interface Window { dataLayer: any[]; }
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
+   window.dataLayer.push({
+     'event':'virtualPageView',
+     'pageUrl':window.location.href,
+     'pageTitle': 'Home',
+     'serviceCode':'9925',
+     'scanCode_code':'90999999999'
 
+   });
+  }
+  gotoScanPage(){
+    this.router.navigateByUrl('/scanProduct/9925');
+  }
 }

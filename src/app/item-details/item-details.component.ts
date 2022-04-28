@@ -10,6 +10,14 @@ export class ItemDetailsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    window.dataLayer.push({
+      'event':'virtualPageView',
+      'pageUrl':window.location.href,
+      'pageTitle': 'ItemDescription',
+      'serviceCode':'9925',
+      'scanCode_code':'90999999999'
+
+    })
   }
 
 }

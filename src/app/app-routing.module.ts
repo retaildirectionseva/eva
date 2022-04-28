@@ -4,43 +4,49 @@ import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HomeComponent } from './home/home.component';
 import { ItemDetailsComponent } from './item-details/item-details.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 import { ScanProductComponent } from './scan-product/scan-product.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 
 const routes: Routes = [
   {
-    path: 'eva/home/:servicecode',
+    path: 'home/:servicecode',
     component: HomeComponent
   },
   {
-    path: 'eva/scanProduct/:servicecode',
+    path: 'scanProduct/:servicecode',
     component: ScanProductComponent
   },
   {
-    path: 'eva/basket/:servicecode',
+    path: 'basket/:servicecode',
     component: BasketComponent
   },
   {
-    path: 'eva/checkout/:servicecode',
+    path: 'checkout/:servicecode',
     component: CheckoutComponent
   },
   {
-    path: 'eva/thankyou/:servicecode',
+    path: 'thankyou/:servicecode',
     component: ThankyouComponent
   },
   {
-    path: 'eva/terms_conditions',
+    path: 'terms_conditions',
     component: TermsConditionsComponent
   },
   {
-    path: 'eva/itemDescription/:servicecode/:barcode',
+    path: 'itemDescription/:servicecode/:barcode',
     component: ItemDetailsComponent
+  },
+  {
+    path: '**',
+    component: NotfoundComponent
   }
 ];
+let config = {useHash:true,enableTracing:true};
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,config)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

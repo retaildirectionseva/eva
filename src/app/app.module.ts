@@ -10,6 +10,7 @@ import { BasketComponent } from './basket/basket.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
 import { TermsConditionsComponent } from './terms-conditions/terms-conditions.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TermsConditionsComponent } from './terms-conditions/terms-conditions.co
     BasketComponent,
     CheckoutComponent,
     ThankyouComponent,
-    TermsConditionsComponent
+    TermsConditionsComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,

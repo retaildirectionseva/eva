@@ -13,9 +13,10 @@ export class ThankyouComponent implements OnInit {
     window.dataLayer.push({
       'event':'virtualPageView',
       'pageUrl':window.location.href,
-      'pageTitle': 'thankyou',
+      'pageTitle': 'Thankyou',
       'serviceCode':'9925',
-      'scanCode_code':'90999999999'
+      'scanCode_code':'90999999999',
+      'portalOwner': 'awpl'
 
     })
   }

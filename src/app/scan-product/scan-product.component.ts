@@ -13,9 +13,10 @@ export class ScanProductComponent implements OnInit {
     window.dataLayer.push({
       'event':'virtualPageView',
       'pageUrl':window.location.href,
-      'pageTitle': 'scanProduct',
+      'pageTitle': 'ScanProduct',
       'serviceCode':'9925',
-      'scanCode_code':'90999999999'
+      'scanCode_code':'90999999999',
+      'portalOwner': 'awpl'
 
     })
   }

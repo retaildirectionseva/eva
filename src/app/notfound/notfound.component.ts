@@ -15,7 +15,8 @@ export class NotfoundComponent implements OnInit {
       'pageUrl':window.location.href,
       'pageTitle': 'notFound',
       'serviceCode':'9925',
-      'scanCode_code':'90999999999'
+      'scanCode_code':'90999999999',
+      'portalOwner': 'awpl'
 
     })
   }

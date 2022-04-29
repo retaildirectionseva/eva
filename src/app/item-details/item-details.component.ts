@@ -15,7 +15,8 @@ export class ItemDetailsComponent implements OnInit {
       'pageUrl':window.location.href,
       'pageTitle': 'ItemDescription',
       'serviceCode':'9925',
-      'scanCode_code':'90999999999'
+      'scanCode_code':'90999999999',
+      'portalOwner': 'awpl'
 
     })
   }

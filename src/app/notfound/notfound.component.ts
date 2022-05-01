@@ -15,6 +15,7 @@ export class NotfoundComponent implements OnInit {
       'pageUrl':window.location.href,
       'pageTitle': 'notFound',
       'serviceCode':'9925',
+      'store': 'ongole',
       'scanCode_code':'90999999999',
       'portalOwner': 'awpl'
 

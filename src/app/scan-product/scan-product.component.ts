@@ -15,6 +15,7 @@ export class ScanProductComponent implements OnInit {
       'pageUrl':window.location.href,
       'pageTitle': 'ScanProduct',
       'serviceCode':'9925',
+      'store': 'ongole',
       'scanCode_code':'90999999999',
       'portalOwner': 'awpl'
 
